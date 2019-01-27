@@ -9,7 +9,7 @@
     <li class="post__wrap">
       <div>{{ post.user.email }}</div>
       <div>{{ post.created_at }}</div>
-      <div class="post__text">{{ post.text }}</div>
+      <div class="post__text">{{ post.text|linebreaksbr }}</div>
       {% if user.is_authenticated and user == post.user %}
       <div class="post__edit">
         <a href="{% url 'post_update' post.pk %}">編集する</a>

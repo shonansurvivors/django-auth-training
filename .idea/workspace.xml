@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3edc155a-b796-4cb0-bdb1-d595d96302f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="local_settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -95,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="247">
+              <caret line="100" column="26" selection-start-line="100" selection-end-line="100" selection-end-column="26" />
               <folding>
                 <element signature="e#307#316#0" expanded="true" />
               </folding>
@@ -243,8 +244,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="300">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -331,7 +332,6 @@
         <option value="$PROJECT_DIR$/templates/account/base.html" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/templates/training/login.html" />
-        <option value="$PROJECT_DIR$/config/settings.py" />
         <option value="$PROJECT_DIR$/templates/base2.html" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
@@ -343,11 +343,12 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/training/post_update.html" />
         <option value="$PROJECT_DIR$/training/urls.py" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/training/views.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/config/settings.py" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
       </list>
     </option>
   </component>
@@ -432,17 +433,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="861" y="28" width="810" height="953" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="GfmBrowser" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6363636" visible="true" weight="0.2890625" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6363636" visible="true" weight="0.2890625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" sideWeight="0.36363637" side_tool="true" weight="0.2890625" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36799064" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36799064" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -747,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/training/post_create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -816,20 +809,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
-          <folding>
-            <element signature="e#307#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="100" column="26" selection-start-line="100" selection-end-line="100" selection-end-column="26" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
