@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h1>最新記事一覧</h1>
+  <ul class="postGroup__wrap">
+    {% for post in object_list %}
+    <li class="post__wrap">
+      <div>{{ post.user.email }}</div>
+      <div>{{ post.created_at }}</div>
+      <div class="post__text">{{ post.text }}</div>
+      {% if user.is_authenticated and user == post.user %}
+      <div class="post__edit">
+        <a href="{% url 'post_update' post.pk %}">編集する</a>
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

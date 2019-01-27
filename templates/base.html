@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Django Mini Blog Top</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet"
+</head>
+<body>
+  <header>
+    <div class="header__inner clearfix">
+    <a href="/">
+      <h1>Django Mini Blog</h1>
+    </a>
+    <div id="nav__toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <nav class="clearfix">
+    <ul>
+    {% if user.is_authenticated %}
+      <li>ID:{{ user.email }}</li>
+      <li><a href="{% url 'post_create' %}">ブログを書く</a></li>
+      <li><a href="{% url 'account_logout' %}">ログアウト</a></li>
+    {% else %}
+      <li><a href="{% url 'account_login' %}">ログイン</a></li>
+      <li><a href="{% url 'account_signup'%}">ユーザー登録</a></li>
+    {% endif %}
+    </ul>
+  </nav>
+  </header>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
